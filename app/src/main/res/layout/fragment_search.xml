@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.Fragments.SearchFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search."
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        />
+    <EditText
+        android:id="@+id/searchEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search news..."
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-black"
+        android:drawableTint="@color/purple"
+        android:background="@drawable/search_border"
+        android:drawableEnd="@drawable/baseline_search_24"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/searchEdit"/>
+    <include
+        android:id="@+id/itemSearchError"
+        layout="@layout/item_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+    <ProgressBar
+        android:id="@+id/paginationProgressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

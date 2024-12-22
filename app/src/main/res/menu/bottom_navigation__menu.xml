@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/headlines_fragment"
+        android:title="HeadLines"
+        android:icon="@drawable/icon_news"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/favorite_fragment"
+        android:title="Favorite News"
+        android:icon="@drawable/icon_favorite"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/search_fragment"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"
+        />
+
+
+
+</menu>
